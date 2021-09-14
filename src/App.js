@@ -1,6 +1,6 @@
-import { React, useState } from "react";
-import FunctionContextComponent from "./FunctionContextComponent";
+import React, { useState } from "react";
 import ClassContextComponent from "./ClassContextComponent";
+import FunctionContextComponent from "./FunctionContextComponent";
 
 export const ThemeContext = React.createContext();
 
@@ -15,7 +15,7 @@ export default function App() {
 		<>
 			<ThemeContext.Provider value={darkTheme}>
 				<button onClick={toggleTheme}>Toggle Theme</button>
-				<FunctionalContextComponent />
+				<FunctionContextComponent />
 				<ClassContextComponent />
 			</ThemeContext.Provider>
 		</>
